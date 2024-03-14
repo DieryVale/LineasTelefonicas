@@ -150,10 +150,10 @@ class Empresa:
         # <b>post: </b> Se reinici� la llamada a la l�nea 1, 2 y 3. 
     '''
     def reiniciar(self):
-        self.linea1.reiniciar()
-        self.linea2.reiniciar()
-        self.linea3.reiniciar()
+       self.linea1.reiniciar()
         # // TODO Parte3 PuntoB: Completar el m�todo para reiniciar las lineas 2 y 3.
+	self.linea2.reiniciar()
+	self.linea3.reiniciar()
 
     '''----------------------------------------------------------------
     # Puntos de Extensi�n
