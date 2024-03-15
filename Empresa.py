@@ -45,7 +45,7 @@ class Empresa:
 
     def darTotalNumeroLlamadas(self):
         # TODO Parte3 PuntoE: Completar el m�todo seg�n la documentaci�n dada.
-        return self.linea1.darNumeroLlamadas + self.linea2.darNumeroLlamadas + self.linea3.darNumeroLlamadas
+        return self.linea1.darNumeroLlamadas() + self.linea2.darNumeroLlamadas() + self.linea3.darNumeroLlamadas()
         
     
     '''
@@ -54,16 +54,16 @@ class Empresa:
 	 '''
     def darTotalMinutos(self):
         # TODO Parte3 PuntoF: Completar el m�todo seg�n la documentaci�n dada.
-        return self.linea1.darNumeroLlamadas + self.linea2.darNumeroLlamadas + self.linea2.darNumeroLlamadas
+        return self.linea1.darNumeroLlamadas() + self.linea2.darNumeroLlamadas() + self.linea2.darNumeroLlamadas()
     
     def darTotalCostoLlamadas(self):
         # TODO Parte3 PuntoG: Completar el m�todo seg�n la documentaci�n dada.
-        return self.linea1.darCostoLlamadas + self.linea2.darCostoLlamadas + self.linea3.darCostoLlamadas
+        return self.linea1.darCostoLlamadas() + self.linea2.darCostoLlamadas() + self.linea3.darCostoLlamadas()
     '''
         # Retorna el costo promedio de un minuto, seg�n los minutos consumidos. <br>
 	    # @return Costo promedio por minuto.
     '''
-    def darCostoPromedioMinuto(self, pMinutos):
+    def darCostoPromedioMinuto(self):
         # TODO Parte3 PuntoH: Completar el m�todo seg�n la documentaci�n dad
         return self.darTotalMinutos() / self.darTotalMinutos() 
 

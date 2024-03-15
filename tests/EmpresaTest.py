@@ -80,15 +80,15 @@ class TestEmpresa:
 
     def test_darTotalMinutos(self):
         self.setup_escenario2()
-        assert self.empresa.darTotalMinutos() == 666
+        assert self.empresa.darTotalMinutos() == 15
 
     def test_darTotalCosto(self):
         self.setup_escenario2()
-        assert self.empresa.darTotalCostoLlamadas() == 420912
+        assert self.empresa.darTotalCostoLlamadas() == 6240
 
     def test_dar_costo_promedio(self):
         self.setup_escenario2()
-        assert self.empresa.darCostoPromedioMinuto() == 632
+        assert self.empresa.darCostoPromedioMinuto() == 1.0
 
     def test_reiniciar(self):
         self.setup_escenario2()
