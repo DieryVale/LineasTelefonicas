@@ -12,6 +12,9 @@ class LineaTelefonica:
     # Costo total de las llamadas
     costoLlamadas = 0
 
+    # modelar el estrato 
+    estrato = 0 
+
     '''----------------------------------------------------------------
     # Metodos
     ----------------------------------------------------------------'''
@@ -21,7 +24,20 @@ class LineaTelefonica:
         # TODO Parte2 PuntoA: Completar el método según la documentación dada.
         self.numeroLlamadas = 0 
         self.numeroMinutos =  0 
-        self.costoLlamadas = 0 
+        self.costoLlamadas = 0
+        
+
+
+    #Cambiar el estrato de una linea, no retorna nada 
+    
+    def definirEstrato(self, pEstrato):
+        self.estrato = pEstrato
+
+
+
+    # Retorna el estrato de la linea 
+    def darEstrato(self):
+        return self.estrato
 
     #Retorna el costo total de las llamadas realizadas.
     def darCostoLlamadas(self):

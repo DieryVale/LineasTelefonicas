@@ -22,6 +22,8 @@ class Empresa:
         self.linea2 = LineaTelefonica()
         self.linea3 = LineaTelefonica ()
         # TODO Parte3 PuntoA: Construir linea2 y linea3.
+
+        # 
         
     # Retorna la l�nea 1.
     def darLinea1(self):
