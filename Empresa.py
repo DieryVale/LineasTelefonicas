@@ -21,9 +21,13 @@ class Empresa:
         self.linea1 = LineaTelefonica()
         self.linea2 = LineaTelefonica()
         self.linea3 = LineaTelefonica ()
+        self.linea1.estrato(2) # 24,25,26 falla el test 
+        self.linea2.estrato(5)
+        self.linea3.estrato(6)
         # TODO Parte3 PuntoA: Construir linea2 y linea3.
 
-        # 
+        # agergar al final del metodo constructor tres instrucciones con llamadas al método del punto anterior, para que la línea 1 sea de estrato 2, la línea 2 de estrato 5 y la línea 3 de estrato 
+        
         
     # Retorna la l�nea 1.
     def darLinea1(self):
