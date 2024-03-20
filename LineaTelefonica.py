@@ -26,19 +26,6 @@ class LineaTelefonica:
         self.numeroMinutos =  0 
         self.costoLlamadas = 0
         
-
-
-    #Cambiar el estrato de una linea, no retorna nada 
-    
-    def definirEstrato(self, pEstrato):
-        self.estrato = pEstrato
-
-
-
-    # Retorna el estrato de la linea 
-    def darEstrato(self):
-        return self.estrato
-
     #Retorna el costo total de las llamadas realizadas.
     def darCostoLlamadas(self):
         return self.costoLlamadas
@@ -103,4 +90,20 @@ class LineaTelefonica:
         self.numeroMinutos += pMinutos
         self.costoLlamadas += pMinutos * 999
         # TODO Parte2 PuntoG: Completar el método según la documentación dada.
+    
+    #Cambiar el estrato de una linea, no retorna nada 
+    
+    def definirEstrato(self, pEstrato):
+        self.estrato = pEstrato
+
+
+
+    # Retorna el estrato de la linea 
+    def darEstrato(self):
+        return self.estrato
+
+
+    # darMinutosPorEstrato( ) sin parámetros, que retorna el resultado de multiplicar el número de minutos consumidos en la línea por el estrato de la línea.
+    def darMinutosPorEstrato(self):
+        return self.numeroMinutos * self.estrato  
        

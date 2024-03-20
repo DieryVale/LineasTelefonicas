@@ -26,9 +26,7 @@ class Empresa:
         self.linea3.definirEstrato(6) 
         
         # TODO Parte3 PuntoA: Construir linea2 y linea3.
-
         # agergar al final del metodo constructor tres instrucciones con llamadas al método del punto anterior, para que la línea 1 sea de estrato 2, la línea 2 de estrato 5 y la línea 3 de estrato 
-        
         
     # Retorna la l�nea 1.
     def darLinea1(self):
