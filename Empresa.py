@@ -160,6 +160,10 @@ class Empresa:
         self.linea2.reiniciar()
         self.linea3.reiniciar()
 
+    # retorna el total calculado de sumar lo que retorna el método anterior (darMinutosPorEstrato) para cada línea.
+    def darTotalMinutosPorEstrato(self):
+        return self.linea1.darMinutosPorEstrato() + self.linea2.darMinutosPorEstrato() + self.linea3.darMinutosPorEstrato()
+
     '''----------------------------------------------------------------
     # Puntos de Extensi�n
     ----------------------------------------------------------------'''
@@ -167,9 +171,12 @@ class Empresa:
     # M�todo para la extensi�n 1.
     # @return Respuesta 1. 
     def metodo1(self):
-        return "Respuesta 1"
+        return  "Total = " + self.darTotalMinutosPorEstrato  
+    
 
     # M�todo para la extensi�n 2.
     # @return Respuesta 2.
     def metodo2(self):
         return "Respuesta 2"
+    
+
