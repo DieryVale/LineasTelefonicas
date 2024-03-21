@@ -183,6 +183,6 @@ class Empresa:
     # @return Respuesta 2.
     def metodo2(self):
         bono = 0.2
-        return "Valor del bono es " + self.linea1.bono + self.linea2.bono + self.linea3.bono
+        return "Valor del bono es " + self.linea1*bono + self.linea2*bono + self.linea3*bono # posible solucion o cambiar el * por un . 
     
 
