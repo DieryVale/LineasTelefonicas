@@ -25,6 +25,8 @@ class LineaTelefonica:
         self.numeroLlamadas = 0 
         self.numeroMinutos =  0 
         self.costoLlamadas = 0
+        self.costoDeMinutosACelular = 0 
+        self.cantidadDeMinutosACelular = 0 
         
     #Retorna el costo total de las llamadas realizadas.
     def darCostoLlamadas(self):
@@ -48,15 +50,19 @@ class LineaTelefonica:
         self.numeroLlamadas = 0 
         self.numeroMinutos = 0
         self.costoLlamadas = 0
+        self.costoDeMinutosACelular = 0 
+        self.cantidadDeMinutosACelular = 0 
 
         # TODO Parte2 PuntoE: Completar el método según la documentación dada.
 
     # Agrega una llamada local a la línea telefónica
+        
     def llamadaLocal (self, pminutos):
     # post: Se incrementá en 1 numeroDeLlamadas, se incremento numeroDeMinutos en minutos, costoLlamadas aumentá en ( minutos * 35 ).
         self.numeroLlamadas += 1 
         self.numeroMinutos += pminutos
         self.costoLlamadas += pminutos * 35
+
     # :param pMinutos Número de minutos de la llamada. pMinutos >0.
     def agregarLlamadaLocal(self, pMinutos):
         
@@ -89,6 +95,10 @@ class LineaTelefonica:
         self.numeroLlamadas += 1
         self.numeroMinutos += pMinutos
         self.costoLlamadas += pMinutos * 999
+        self.cantidadDeMinutosACelular  = 0 
+        self.costoDeMinutosACelular = 999
+
+
         # TODO Parte2 PuntoG: Completar el método según la documentación dada.
     
     #Cambiar el estrato de una linea, no retorna nada 
@@ -107,3 +117,8 @@ class LineaTelefonica:
     def darMinutosPorEstrato(self):
         return self.numeroMinutos * self.estrato  
        
+    def consultarCantodadMinutosCelular(self):
+        return self.consultarCantodadMinutosCelular
+    
+    def consultarCostoMinutosCelular(self):
+        return self.consultarCostoMinutosCelular

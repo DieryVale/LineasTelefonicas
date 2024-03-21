@@ -12,6 +12,10 @@ class Empresa:
     linea2 = 0 
     # Línea telefónica número 3.
     linea3 = 0 
+
+    # 1.	Agregar los atributos que modelen la cantidad y el costo de minutos de llamadas a celular.
+    cantidadDeMinutosACelular = 0 
+    costoDeMinutosACelular = 0 
     
     '''----------------------------------------------------------------
     # Metodos
