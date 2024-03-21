@@ -171,7 +171,7 @@ class Empresa:
     # M�todo para la extensi�n 1.
     # @return Respuesta 1. 
     def metodo1(self):
-        return  "Total = " + self.darTotalMinutosPorEstrato  
+        return  "Total = " + self.darTotalMinutosPorEstrato() 
     
 
     # M�todo para la extensi�n 2.
